@@ -1,0 +1,97 @@
+<section id="title">타기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      <strong
+        >번역자 코멘트: 본 문제의 경우 잘못된 예제 $3$번이 데이터에 포함되어
+        있습니다. 문제를 푸실 때에는 별도로 해당 예제를 예외처리하는 코드를
+        작성해 주시기 바랍니다.
+      </strong>
+    </p>
+    <p>
+      타기는 마르코의 공연 준비를 돕는 든든한 조수 로봇이다. 마르코와 타기는
+      시간이 날 때마다 아래의 게임을 한다.
+    </p>
+
+    <ol>
+      <li>타기가 길이 $N$의 수열 $A_1, A_2, \cdots, A_N$을 정한다.</li>
+      <li>
+        마르코가 $M$번의 질문을 한다. 각 질문에서 마르코는 정수 $L$, $R$을
+        정하고, 타기에게 수열의 $L$번째 수부터 $R$번째 수까지의 합이 무엇인지를
+        질문한다.
+      </li>
+      <li>타기는 매 질문마다 최대한 빨리 정답을 말한다.</li>
+    </ol>
+
+    <p>물론 이 게임은 타기에게 너무 쉬웠고, 마르코는 아래의 제약을 추가했다.</p>
+
+    <ol>
+      <li>마르코는 각 질문마다 정수 $X$를 정한다.</li>
+      <li>
+        합을 구하기 전, 수열의 $L$번째 수부터 $R$번째 수까지, 각각의 수가
+        짝수라면 그 수를 $2$로 나누어야 하고, 홀수라면 $X$로 바꿔야 한다.
+      </li>
+      <li>정답을 대답할 때마다 수열에 했던 변환 작업을 모두 되돌려야 한다.</li>
+    </ol>
+
+    <p>
+      타기는 마르코의 선 넘은 제약에 그만 두뇌 회로가 정지하고 말았다. 여러분이
+      타기를 위해 매 질문마다 답을 구하는 프로그램을 작성해 주자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 수열의 길이 $N$과 질문의 개수 $M$이 공백으로 구분되어 주어진다.
+      ($1 \le N \le 100\,000$; $1 \le M \le 1\,000\,000$)
+    </p>
+
+    <p>
+      둘째 줄에 $A_1, A_2, \cdots, A_N$이 공백으로 구분되어 주어진다. ($1 \le
+      A_i \le 10^9$)
+    </p>
+
+    <p>
+      이후 $M$개의 줄에 걸쳐 한 줄에 하나의 질문이 주어진다. $i$번째 질문에서는
+      $L_i$, $R_i$, $X_i$가 주어진다. ($1 \le L_i \le R_i \le N$; $1 \le X_i \le
+      10^9$)
+    </p>
+
+    <p>입력으로 주어지는 모든 수는 정수이다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>$M$개의 줄에 걸쳐 마르코의 질문에 대한 답을 한 줄에 하나씩 출력한다.</p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>노트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>첫 번째 예제에서 각 질문에 대한 답은 아래와 같이 계산된다.</p>
+
+    <ol>
+      <li>$7 + 2 + 1 + 7 = 17$</li>
+
+      <li>$5 + 5 = 10$</li>
+
+      <li>$9 + 9 + 2 = 20$</li>
+
+      <li>$4$</li>
+
+      <li>$1 + 1 + 16 + 6 = 24$</li>
+    </ol>
+  </div>
+</section>
